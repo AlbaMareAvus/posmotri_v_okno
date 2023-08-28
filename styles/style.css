@@ -9,6 +9,10 @@ html {
 }
 
 .page {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -37,19 +41,28 @@ ol {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .content {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   gap: 30px;
-  padding: 133px 30px;
-  inline-size: inherit;
-  block-size: inherit;
+  inline-size: 1140px;
+  block-size: 534px;
 }
 
 .result__video-container {
   position: relative;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   inline-size: 711px;
   block-size: 386px;
 }
@@ -66,13 +79,73 @@ ol {
   justify-content: space-between;
 }
 
+.search-form__fieldset {
+  border: 0;
+}
+
 .search-form__fieldset-title {
+  margin-block-end: 5px;
   color: #fff;
   font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: normal;
+}
+
+.search-form__label {
+  display: flex;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.search-form__textfield {
+  border: 0;
+  border-block-start: 1px solid currentColor;
+  border-block-end: 1px solid currentColor;
+  padding: 0;
+  color: #fff;
+  font-family: inherit;
+  font-size: 18px;
+  background: transparent;
+  inline-size: 225px;
+  block-size: 27px;
+  appearance: none;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  display: block;
+  margin-inline-end: 5px;
+  border: 1px solid #fff;
+  block-size: 19px;
+  inline-size: 19px;
+}
+
+.button {
+  border: 1px solid currentColor;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+  block-size: 34px;
+}
+
+.search-form__submit-button {
+  align-self: flex-end;
+  inline-size: 194px;
+}
+
+.more-button {
+  inline-size: 100%;
 }
 
 .title {
