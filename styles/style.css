@@ -9,7 +9,6 @@ html {
 }
 
 .page {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +56,6 @@ ol {
   align-items: flex-end;
   gap: 30px;
   inline-size: 1140px;
-  block-size: 534px;
 }
 
 .result__video-container {
@@ -212,7 +210,7 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 26px;
+  gap: 22px;
   inline-size: inherit;
   block-size: inherit;
 }
@@ -223,13 +221,17 @@ ol {
   block-size: 298px;
 }
 
+.content__list-item:last-child {
+  padding: 0 2px 2px;
+  margin-block-end: -2px;
+}
+
 .content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
 .content__card-link {
   display: block;
-  margin: 2px;
   color: #fff;
   font-style: normal;
   text-decoration: none;
@@ -263,11 +265,11 @@ ol {
 }
 
 .content__video-card-title {
-  margin-block-end: 6px;
+  margin-block: 2px 3px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: .8;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -283,8 +285,9 @@ ol {
 }
 
 .content__video-card-thumbnail {
+  margin-inline-end: -4px;
   object-fit: cover;
   object-position: center;
   block-size: 103px;
-  inline-size: 190px;
+  inline-size: 194px;
 }
