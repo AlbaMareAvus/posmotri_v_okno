@@ -222,8 +222,8 @@ ol {
 }
 
 .content__list-item:last-child {
-  padding: 0 2px 2px;
   margin-block-end: -2px;
+  padding: 0 2px 2px;
 }
 
 .content__list-item:not(:last-child) {
