@@ -52,9 +52,8 @@ ol {
 
 .content {
   display: flex;
-  justify-content: center;
   align-items: flex-end;
-  gap: 30px;
+  gap: 28px;
   inline-size: 1140px;
 }
 
@@ -133,6 +132,7 @@ ol {
   display: flex;
   justify-content: space-between;
   gap: 15px;
+  padding-block-start: 2px;
 }
 
 .search-form__pseudo-checkbox {
@@ -193,12 +193,13 @@ ol {
 }
 
 .title {
+  padding-inline-start: 2px;
   color: #fff;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
-  line-height: .94;
+  line-height: .93;
   text-transform: uppercase;
 }
 
@@ -217,13 +218,9 @@ ol {
 
 .content__list {
   position: relative;
+  padding: 2px;
   overflow: auto;
   block-size: 298px;
-}
-
-.content__list-item:last-child {
-  margin-block-end: -2px;
-  padding: 0 2px 2px;
 }
 
 .content__list-item:not(:last-child) {
@@ -260,12 +257,11 @@ ol {
   justify-content: space-between;
   align-items: flex-start;
   padding: 2px;
-  inline-size: 394px;
   block-size: 107px;
 }
 
 .content__video-card-title {
-  margin-block: 2px 3px;
+  margin-block: 1px 3px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -285,9 +281,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  margin-inline-end: -4px;
   object-fit: cover;
-  object-position: center;
+  object-position: right center;
   block-size: 103px;
   inline-size: 194px;
 }
